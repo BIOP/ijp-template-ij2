@@ -88,6 +88,20 @@
 				<role>maintainer</role>
 			</roles>
 		</developer>
+		<developer>
+			<id>RDornier</id>
+			<name>Rémy Dornier</name>
+			<url>https://www.epfl.ch/research/facilities/ptbiop/staff/</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
 	</developers>
 	<contributors>
 		<contributor>
@@ -119,6 +133,12 @@
 			<url>http://biop.epfl.ch/INFO_Facility.html</url>
 			<roles><role>founder</role></roles>
 			<properties><id>stoffelc</id></properties>
+		</contributor>
+		<contributor>
+			<name>Rémy Dornier</name>
+			<url>http://biop.epfl.ch/INFO_Facility.html</url>
+			<roles><role>founder</role></roles>
+			<properties><id>RDornier</id></properties>
 		</contributor>
 	</contributors>
 
