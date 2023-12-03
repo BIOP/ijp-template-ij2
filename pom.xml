@@ -8,18 +8,18 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>33.1.0</version>
+		<version>37.0.0</version>
 		<relativePath />
 	</parent>
 
 	<groupId>ch.epfl.biop</groupId>
-	<artifactId>DummyCommand</artifactId>
+	<artifactId>dummy-command</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 
 	<name>Biop Dummy Command</name>
 	<description>A Maven project implementing an ImageJ command - template for BIOP - EPFL</description>
 	<url>http://biop.epfl.ch</url>
-	<inceptionYear>2022</inceptionYear>
+	<inceptionYear>2023</inceptionYear>
 	<organization>
 		<name>BIOP</name>
 		<url>http://biop.epfl.ch</url>
@@ -75,20 +75,6 @@
 			</roles>
 		</developer>
 		<developer>
-			<id>stoffelc</id>
-			<name>Claire Stoffel</name>
-			<url>https://www.epfl.ch/research/facilities/ptbiop/staff/</url>
-			<roles>
-				<role>founder</role>
-				<role>lead</role>
-				<role>developer</role>
-				<role>debugger</role>
-				<role>reviewer</role>
-				<role>support</role>
-				<role>maintainer</role>
-			</roles>
-		</developer>
-		<developer>
 			<id>RDornier</id>
 			<name>Rémy Dornier</name>
 			<url>https://www.epfl.ch/research/facilities/ptbiop/staff/</url>
@@ -129,12 +115,6 @@
 			<properties><id>ArneS70</id></properties>
 		</contributor>
 		<contributor>
-			<name>Claire Stoffel</name>
-			<url>http://biop.epfl.ch/INFO_Facility.html</url>
-			<roles><role>founder</role></roles>
-			<properties><id>stoffelc</id></properties>
-		</contributor>
-		<contributor>
 			<name>Rémy Dornier</name>
 			<url>http://biop.epfl.ch/INFO_Facility.html</url>
 			<roles><role>founder</role></roles>
@@ -150,16 +130,17 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/</connection>
-		<developerConnection>scm:git:git@github.com:</developerConnection>
+		<connection>scm:git:git:https://github.com/BIOP/ijp-template-ij2</connection>
+		<developerConnection>scm:git:git@github.com:BIOP/ijp-template-ij2</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/</url>
+		<url>https://github.com/BIOP/ijp-template-ij2</url>
 	</scm>
 	
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url></url>
+		<url>https://github.com/BIOP/ijp-template-ij2/issues</url>
 	</issueManagement>
+
 
 	<ciManagement>
 		<system>None</system>

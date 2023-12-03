@@ -1,7 +1,5 @@
 package ch.epfl.biop.ij2command;
 
-import net.imagej.ImageJ;
-
 import org.scijava.ItemIO;
 import org.scijava.command.Command;
 import org.scijava.platform.PlatformService;
@@ -20,6 +18,7 @@ import java.net.URL;
  * </p>
  */
 
+@SuppressWarnings("unused") // fields are filled by scijava processors through reflection
 @Plugin(type = Command.class, menuPath = "Plugins>BIOP>Dummy Command")
 public class DummyCommand implements Command {
 
@@ -29,13 +28,15 @@ public class DummyCommand implements Command {
     @Parameter
     PlatformService ps;
 
-    @Parameter
-    int number1;
+    @Parameter(label = "Please enter your first number",
+               style = "format:0.000") // Formatting is important to display decimal precision
+    double number1;
 
     @Parameter
-    int number2;
+    double number2;
 
-    @Parameter(label = "What is your nickname?")
+    @Parameter(label = "What is your nickname?",
+               description = "(This description is displayed when hovering over this field)")
     String name;
 
     @Parameter(type = ItemIO.OUTPUT)
@@ -43,7 +44,7 @@ public class DummyCommand implements Command {
 
     @Override
     public void run() {
-        uiService.show("Hello from the BIOP! Happy new year "+name+" !");
+        uiService.show("Hello "+name+" !");
         try {
             ps.open(new URL("https://biop.epfl.ch"));
         } catch (IOException e) {
@@ -52,19 +53,5 @@ public class DummyCommand implements Command {
         the_answer_to_everything = 42;
     }
 
-    /**
-     * This main function serves for development purposes.
-     * It allows you to run the plugin immediately out of
-     * your integrated development environment (IDE).
-     *
-     * @param args whatever, it's ignored
-     * @throws Exception
-     */
-    public static void main(final String... args) throws Exception {
-        // create the ImageJ application context with all available services
-        final ImageJ ij = new ImageJ();
-        ij.ui().showUI();
 
-        ij.command().run(DummyCommand.class, true);
-    }
 }

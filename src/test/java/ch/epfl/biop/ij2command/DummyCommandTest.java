@@ -1,4 +1,5 @@
-import ch.epfl.biop.ij2command.DummyCommand;
+package ch.epfl.biop.ij2command;
+
 import net.imagej.ImageJ;
 import org.junit.Assert;
 import org.junit.Test;
