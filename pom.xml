@@ -18,11 +18,11 @@
 
 	<name>Biop Dummy Command</name>
 	<description>A Maven project implementing an ImageJ command - template for BIOP - EPFL</description>
-	<url>http://biop.epfl.ch</url>
-	<inceptionYear>2023</inceptionYear>
+	<url>https://biop.epfl.ch</url>
+	<inceptionYear>2024</inceptionYear>
 	<organization>
 		<name>BIOP</name>
-		<url>http://biop.epfl.ch</url>
+		<url>https://biop.epfl.ch</url>
 	</organization>
 	<licenses>
 		<license>
